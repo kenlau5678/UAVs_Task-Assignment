@@ -36,7 +36,7 @@
 在长航时任务中，电量平衡（Load Balancing）是维持集群生存能力的关键。
 
 * **核心策略**：在出价函数中引入剩余电量作为权重变量。
-    $$Bid = \alpha \cdot \text{Energy\_Remaining} - \beta \cdot \Delta \text{Distance}$$
+    $$Bid = \alpha \cdot \text{EnergyRemaining} - \beta \cdot \Delta \text{Distance}$$
 * **算法效果**：系统会自动规避让低电量无人机执行高耗能任务。这种机制能显著延长整个无人机群的整体工作寿命（Network Lifetime），防止部分节点过早因电量耗尽而离网。
 
 ### 3. 异步序贯拍卖
